@@ -38,18 +38,18 @@ SELECT * FROM ATORES
 WHERE Genero = 'F'
 ORDER BY PrimeiroNome
 
--- Decimo
+-- Décimo
 SELECT Filmes.Nome, Generos.Genero FROM Filmes
 INNER JOIN FilmesGenero ON Filmes.Id = FilmesGenero.IdFilme
 INNER JOIN Generos ON FilmesGenero.IdGenero = Generos.Id
 
--- Decimo primeiro
+-- Décimo primeiro
 SELECT Filmes.Nome, Generos.Genero FROM Filmes
 INNER JOIN FilmesGenero ON Filmes.Id = FilmesGenero.IdFilme
 INNER JOIN Generos ON FilmesGenero.IdGenero = Generos.Id
 WHERE Genero = 'Mistério'
 
--- Decimo Segundo
+-- Décimo Segundo
 SELECT 
     Filmes.Nome, 
     Atores.PrimeiroNome, 
